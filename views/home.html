@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(0, 2, 46);
+        text-align: center;
+      }
+      h2,
+      h3,
+      h4 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+
+      p {
+        font-family: verdana;
+        font-size: 20px;
+        color: rgb(255, 240, 240);
+      }
+    </style>
+    <title>NBA Centre</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="./home">Home</a></li>
+          <li><a href="./Players">Players</a></li>
+          <li><a href="./Teams">Teams</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h2>Welcome to the NBA Centre</h2>
+    <br />
+    <p>
+      This is just a small project to read data from json files. Then sending
+      them to the server.
+    </p>
+    <p>All the data will be displayed in JSON format.</p>
+    <br />
+    <h2>Some of the functionalities:</h2>
+    <p>
+      To see all the players, navigate to http://localhost:8080/Players or click
+      on "Players" on the upper left corner
+    </p>
+    <p>
+      To see all the teams, navigate to http://localhost:8080/Teams or click on
+      "Teams" on the upper left corner
+    </p>
+    <p>
+      To search player by last name, navigate to
+      http://localhost:8080/Players/:lastname
+    </p>
+    <p>
+      To search team by name, navigate to http://localhost:8080/Teams/:teamname
+    </p>
+    <p>
+      To search team by location, navigate to
+      http://localhost:8080/Teams/:location
+    </p>
+    <br />
+    <p style="font-size: 15px">
+      Note: <b>:location</b>, <b>:teamname</b>, <b>:lastname</b> are the inputs,
+      replace them with the names you are looking for.
+    </p>
+  </body>
+</html>
